@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: none;
+}
+.main{
+    background: url(./images/bg1.jpg)center/cover;
+    height: 75vh;
+    width: auto;
+    padding: 10px 0; 
+}
+.main-header{
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.main-title{
+    font-weight: bolder;
+    margin: 10px 20px;
+    padding: 10px 15px;
+}
+
+.more-info{
+    font-size: 18px;
+    margin: 10px;
+    padding: 8px 39px;
+    text-align: left;
+    width: 100%;
+}
+
+.more-info li{
+    list-style-type: circle;
+}
+
+form{
+    display: block;
+    margin: 10px 10px 0 10px;
+    padding: 10px 5px;
+    width: 85%;
+}
+
+form input{
+    margin: 10px;
+    padding: 6px;
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+}
+
+.submit-btn{
+    width: 100%;
+    display: block;
+    background: rgb(32, 194, 248);
+    color: white;
+    margin: 10px 10px 0 10px;
+    padding: 6px;
+    border-radius: 15px;
+}
+.main img{
+    display: none;
+}
+
+.title h3{
+    margin: 15px 0;
+    padding: 5px;
+    font-size: 26px bold;
+    text-align: center;
+}
+
+.terms{
+    margin: 0 2rem;
+    font-size: xx-small;
+    text-align: justify;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.second-section{
+    text-align: center;
+}
+
+.text{
+    margin: 15px 15px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.feedback img{
+    margin: auto;
+    text-align: center;
+    /* margin: 15px 60px; */
+    /* margin-top: 15px; */
+    width: 100px;
+    border-radius: 100%;
+}
+
+.name{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(192, 192, 192);
+    font-size: 80px;
+}
+
+
+@media only screen and (min-width:1200px){
+    .white{
+        display: block;
+        background-color: white;
+        top: 0;
+        margin:8px 0;
+        padding:15px;
+    }
+    
+    .white p{
+        color: lightgrey;
+        width: 10%;
+        font-size: 20px;
+        border-right: lightgrey 2px solid;
+    }
+    
+    .main img{
+        padding: 10px;
+        display: block;
+        width: 80%;
+    }
+
+    .main-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        height: 85vh;
+        
+    }
+
+    .main-header{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px 120px;
+    }
+
+    .feedback{
+        margin-top: 15px;
+        margin-bottom: 0;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "customer review";
+    }
+
+    .feedback-img{
+        margin-top: 3rem;
+        grid-area: customer;
+        margin-left: 8rem;
+        margin-right: 0;
+    }
+
+    .feedback-text{
+        width: 80%;
+    }
+
+    .text{
+        flex-direction: column;
+        text-align: left;
+        grid-area: review;
+    }
+
+    .second-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 30px;
+        padding-top: 20px;
+    }
+
+    
+}
+
+@media only screen and (min-width:800px){
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .main-header{
+        margin: 0 1rem;
+        width: 60%;
+    }
+
+}
+
